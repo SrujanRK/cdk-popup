@@ -1,0 +1,8 @@
+
+<span (mouseenter)="showPopup($event)"  >Hover</span>
+
+<ng-template #popupTemplate>
+  <div class="popup-content" (mouseover)="onPopupMouseEnter()" (mouseleave)="onPopupMouseLeave()">
+    <app-popup></app-popup>
+  </div>
+</ng-template>
